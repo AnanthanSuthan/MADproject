@@ -67,7 +67,7 @@ public class AdminHomeActivity extends AppCompatActivity implements NavigationVi
 
         navigationView.setNavigationItemSelectedListener(this);
 
-        navigationView.setCheckedItem(R.id.nav_home);
+        navigationView.setCheckedItem(R.id.nav_homea);
 
 
         btnAddnew.setOnClickListener(new View.OnClickListener() {
@@ -117,13 +117,15 @@ public class AdminHomeActivity extends AppCompatActivity implements NavigationVi
     public boolean onNavigationItemSelected(@NonNull MenuItem menuitem) {
 
         switch (menuitem.getItemId()){
-            case R.id.nav_home:
+            case R.id.nav_homea:
                 break;
-            case  R.id.nav_settings:
-                Intent intent0 =new Intent(AdminHomeActivity.this,SettingsActivity.class);
+            case  R.id.nav_updateuser:
+                Toast.makeText(this,"Update Uesr",Toast.LENGTH_SHORT).show();
+                Intent intent0 =new Intent(AdminHomeActivity.this,AdminUpdateActivity.class);
                 startActivity(intent0);
                 break;
-            case  R.id.nav_signout:
+
+            case  R.id.nav_signouta:
                 Toast.makeText(this,"Sign out",Toast.LENGTH_SHORT).show();
                 Intent intent1 =new Intent(AdminHomeActivity.this,MainActivity.class);
                 startActivity(intent1);
