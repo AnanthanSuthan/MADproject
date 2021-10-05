@@ -70,5 +70,36 @@ public class AdminUpdateActivity extends AppCompatActivity {
 
             }
         });
+
+        btndeleteUP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String user = editUserUP.getText().toString();
+                String mail = editEmailUP.getText().toString();
+                String nic = editNICUP.getText().toString();
+                String vacc = editVaccUP.getText().toString();
+                Integer  vacst = Integer.valueOf(editVacSTUP.getText().toString());
+
+                if(user.equals("")||mail.equals("")||nic.equals("")||vacc.equals(""))
+                    Toast.makeText(AdminUpdateActivity.this, "Please enter all the fields", LENGTH_SHORT).show();
+                else{
+                    Boolean checkusermail = CustomersDB.checkusernameemail(user, mail);
+                    if(checkusermail==true){
+                        Boolean insert = CustomersDB.deleteDataAsAdmin(user, nic, vacc, vacst);
+                        if(insert==true){
+                            Toast.makeText(AdminUpdateActivity.this, "Added successfully", LENGTH_SHORT).show();
+                            Intent intent = new Intent(getApplicationContext(),AdminHomeActivity.class);
+                            startActivity(intent);
+                        }else{
+                            Toast.makeText(AdminUpdateActivity.this, "Registration failed", LENGTH_SHORT).show();
+                        }
+                    }else{
+                        Toast.makeText(AdminUpdateActivity.this, "username not matching", LENGTH_SHORT).show();
+                    }
+                }
+
+            }
+        });
     }
 }

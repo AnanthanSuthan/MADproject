@@ -26,8 +26,8 @@
     <EditText
         android:id="@+id/editTextTextPassword2"
         android:layout_width="300dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,8 +37,8 @@
 
     <TextView
         android:id="@+id/textUsername"
-        android:layout_width="102dp"
-        android:layout_height="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:fontFamily="sans-serif-black"
@@ -80,13 +80,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="131dp"
-        android:layout_height="104dp"
+        android:layout_width="85dp"
+        android:layout_height="78dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.963"
+        app:layout_constraintHorizontal_bias="0.962"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/screenshot_2021_09_22_182234" />
@@ -95,15 +95,14 @@
         android:id="@+id/signUpText"
         android:layout_width="104dp"
         android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="70dp"
         android:autoText="false"
         android:background="@color/white"
         android:fontFamily="@font/quicksand_bold"
         android:text="Sign Up"
         android:textColor="#35424a"
         android:textSize="26sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.192"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -127,8 +126,8 @@
     <EditText
         android:id="@+id/editTextTextUsername1"
         android:layout_width="300dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Your email address"
         android:inputType="textEmailAddress"
@@ -141,8 +140,8 @@
     <EditText
         android:id="@+id/editTextTextPassword3"
         android:layout_width="300dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -155,7 +154,6 @@
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/quicksand_bold"
         android:text="Continue"
@@ -163,16 +161,17 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:backgroundTint="#f85f6a"
+        app:layout_constraintBottom_toTopOf="@+id/textSignInMini"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxTerms" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
 
     <EditText
         android:id="@+id/editTextTextUserName"
         android:layout_width="300dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Your user name"
         android:inputType="textPersonName"
@@ -181,22 +180,6 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textUsername" />
-
-    <CheckBox
-        android:id="@+id/checkBoxTerms"
-        style="@android:style/Widget.Holo.CompoundButton.CheckBox"
-        android:layout_width="293dp"
-        android:layout_height="36dp"
-        android:text="I agree to the Terms of Services and Privacy Policy"
-        android:textColor="#8D8A8A"
-        android:textColorHighlight="#f85f6a"
-        android:textColorLink="#f85f6a"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
 
     <TextView
         android:id="@+id/textView"

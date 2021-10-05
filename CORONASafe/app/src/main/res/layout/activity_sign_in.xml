@@ -8,21 +8,6 @@
     tools:context=".SignInActivity" >
 
     <TextView
-        android:id="@+id/textHaveAccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Forget Password?"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSignInAdmin"
-        app:layout_constraintVertical_bias="0.021" />
-
-    <TextView
         android:id="@+id/textSignUpSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,8 +19,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.725"
-        app:layout_constraintStart_toEndOf="@+id/textHaveAccount"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSignInAdmin"
         app:layout_constraintVertical_bias="0.021" />
 
@@ -70,8 +54,8 @@
 
     <TextView
         android:id="@+id/textPassword"
-        android:layout_width="72dp"
-        android:layout_height="29dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-black"
         android:text="Password"
@@ -84,13 +68,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="131dp"
-        android:layout_height="104dp"
+        android:layout_width="73dp"
+        android:layout_height="68dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.963"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/screenshot_2021_09_22_182234" />
@@ -129,8 +113,8 @@
 
     <TextView
         android:id="@+id/textEmail"
-        android:layout_width="101dp"
-        android:layout_height="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="16dp"
@@ -146,7 +130,7 @@
     <EditText
         android:id="@+id/editTextTextUsername1"
         android:layout_width="300dp"
-        android:layout_height="36dp"
+        android:layout_height="40dp"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="textEmailAddress"
@@ -158,7 +142,7 @@
     <EditText
         android:id="@+id/editTextTextPassword3"
         android:layout_width="300dp"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="textPassword"

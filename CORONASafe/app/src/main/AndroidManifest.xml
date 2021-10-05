@@ -18,12 +18,12 @@
 
         <activity android:name=".AdminHomeActivity"
             android:exported="true"
-            android:label="AdminHomeActivity"
+            android:label="Admin Home"
             android:theme="@style/Theme.CORONASafe.NoActionBar" />
 
         <activity android:name=".AdminUpdateActivity"
             android:exported="true"
-            android:label="AdminUpdateActivity"
+            android:label="Admin Update"
             android:theme="@style/Theme.CORONASafe.NoActionBar" />
 
         <activity android:name=".SignUPActivity"
