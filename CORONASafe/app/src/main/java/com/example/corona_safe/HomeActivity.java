@@ -144,6 +144,12 @@ public class HomeActivity  extends AppCompatActivity implements NavigationView.O
                 Intent intent1 =new Intent(HomeActivity.this,MainActivity.class);
                 startActivity(intent1);
                 break;
+
+            case  R.id.nav_updates:
+                Toast.makeText(this,"Sign out",Toast.LENGTH_SHORT).show();
+                Intent intent2 =new Intent(HomeActivity.this,srilankafigures.class);
+                startActivity(intent2);
+                break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;

@@ -130,6 +130,12 @@ public class AdminHomeActivity extends AppCompatActivity implements NavigationVi
                 Intent intent1 =new Intent(AdminHomeActivity.this,MainActivity.class);
                 startActivity(intent1);
                 break;
+
+            case  R.id.nav_updates:
+                Toast.makeText(this,"Sign out",Toast.LENGTH_SHORT).show();
+                Intent intent2 =new Intent(AdminHomeActivity.this,covidDailyupdatesAdmin.class);
+                startActivity(intent2);
+                break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
